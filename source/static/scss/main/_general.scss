@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Poppins-Bold';
+    src: url('/static/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
     font-family: 'Gilroy-extraBold';
     src: url('/static/fonts/Gilroy-ExtraBold.ttf');
 }
@@ -25,10 +30,16 @@ body {
     color: var(--color-white);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
 
     a {
         color: var(--color-white);
         text-decoration: none;
+    }
+
+    .container {
+        overflow: hidden;
     }
 }
 

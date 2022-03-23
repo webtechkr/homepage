@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'Poppins-Bold';
+  src: url("/static/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
   font-family: 'Gilroy-extraBold';
   src: url("/static/fonts/Gilroy-ExtraBold.ttf");
 }
@@ -23,6 +28,8 @@ body {
   color: var(--color-white);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 body a {
@@ -30,7 +37,11 @@ body a {
   text-decoration: none;
 }
 
-.initial .radial1 {
+body .container {
+  overflow: hidden;
+}
+
+header .radial1 {
   position: absolute;
   width: 761px;
   height: 761px;
@@ -42,9 +53,10 @@ body a {
   opacity: 0.15;
   -webkit-filter: blur(400px);
           filter: blur(400px);
+  z-index: -1;
 }
 
-.initial .radial2 {
+header .radial2 {
   position: absolute;
   width: 315px;
   height: 315px;
@@ -54,9 +66,10 @@ body a {
   opacity: 0.5;
   -webkit-filter: blur(350px);
           filter: blur(350px);
+  z-index: -1;
 }
 
-.initial .radial3 {
+header .radial3 {
   position: absolute;
   width: 315px;
   height: 315px;
@@ -66,6 +79,65 @@ body a {
   opacity: 0.5;
   -webkit-filter: blur(350px);
           filter: blur(350px);
+  z-index: -1;
+}
+
+.about-services .radial1 {
+  position: absolute;
+  width: 416px;
+  height: 416px;
+  left: 1064px;
+  top: 1479px;
+  z-index: -1;
+  /* Gradient */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
+  background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+  opacity: 0.3;
+  -webkit-filter: blur(350px);
+          filter: blur(350px);
+}
+
+.about-services .radial2 {
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  left: -157px;
+  top: 1843px;
+  background: #3360FF;
+  opacity: 0.3;
+  -webkit-filter: blur(400px);
+          filter: blur(400px);
+  z-index: -1;
+}
+
+.about-services .radial3 {
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  left: 1420px;
+  top: 2379px;
+  background: #3360FF;
+  opacity: 0.3;
+  -webkit-filter: blur(400px);
+          filter: blur(400px);
+  z-index: -1;
+  border: 1px solid #f00;
+}
+
+.about-services .radial4 {
+  position: absolute;
+  width: 559px;
+  height: 559px;
+  left: -250px;
+  top: 3144px;
+  /* Gradient */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
+  background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+  opacity: 0.3;
+  -webkit-filter: blur(400px);
+          filter: blur(400px);
+  z-index: -1;
+  border: 1px solid #f00;
 }
 
 .navbar {
@@ -238,5 +310,163 @@ body a {
 
 .navbar .navbar-items .nav-menu-btn:hover {
   background: #FFFFFF url("/static/icons/top_menu_black.svg") no-repeat center;
+}
+
+header h1.title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  margin-top: 100px;
+  text-transform: capitalize;
+}
+
+header .divider {
+  width: 190px;
+  height: 0px;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+  border-image-slice: 1;
+  border-image-width: 0 0 2px 0;
+}
+
+header .description {
+  font-size: 26px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+header .header-img .laptop {
+  position: absolute;
+  width: 881.96px;
+  height: 489px;
+  margin-left: -150px;
+  top: 150px;
+}
+
+header .header-img .phone1 {
+  position: absolute;
+  width: 539.5px;
+  height: 440.87px;
+  margin-left: 230px;
+  top: 280px;
+  background: url(iphone-xs-perspective-style-right2.png);
+}
+
+header .header-img .phone2 {
+  position: absolute;
+  width: 546.86px;
+  height: 501.24px;
+  margin-left: 110px;
+  top: 220px;
+  background: url(iphone-xs-perspective-style-right.png);
+}
+
+header .header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+header .header-bottom .cn-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+header .header-bottom .cn-links a span {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+header .header-bottom .cn-links a .insta {
+  background: url("/static/icons/instagram.svg") no-repeat center;
+}
+
+header .header-bottom .cn-links a .fb {
+  background: url("/static/icons/facebook.svg") no-repeat center;
+}
+
+header .header-bottom .cn-links a .linkedin {
+  background: url("/static/icons/linkedin.svg") no-repeat center;
+}
+
+header .header-bottom .cn-links a:hover .insta {
+  background: url("/static/icons/instagram_hvr.svg") no-repeat center;
+}
+
+header .header-bottom .cn-links a:hover .fb {
+  background: url("/static/icons/facebook_hvr.svg") no-repeat center;
+}
+
+header .header-bottom .cn-links a:hover .linkedin {
+  background: url("/static/icons/linkedin_hvr.svg") no-repeat center;
+}
+
+header .header-bottom .mouse-down {
+  display: block;
+  width: 24;
+  height: 34;
+  background: url("/static/icons/mouse.svg") no-repeat center;
+}
+
+.banner1 {
+  background: #292F35;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.banner1 .banner-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  margin-right: 60px;
+}
+
+.banner1 .banner-item.no-border {
+  border-right: none;
+}
+
+.banner1 .banner-item h2 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  margin: 0;
+  background: -webkit-linear-gradient(144.91deg, #00F0FF 20.26%, #3360FF 89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.banner1 .banner-item .title {
+  font-size: 20px;
+  line-height: 120%;
+  font-family: 'Poppins-Bold';
+}
+
+.banner1 .banner-item p {
+  line-height: 160%;
+  margin: 0;
+  margin-top: 12px;
 }
 /*# sourceMappingURL=main.css.map */

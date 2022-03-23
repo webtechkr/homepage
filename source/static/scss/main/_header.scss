@@ -1,0 +1,114 @@
+header {
+
+    h1.title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 75px;
+        margin-top: 100px;         
+        text-transform: capitalize;
+
+    }
+
+    .divider {
+        width: 190px;
+        height: 0px;
+        border: 3px solid;
+        border-image-source: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+        border-image-slice: 1;
+        border-image-width: 0 0 2px 0;
+    }
+
+    .description {        
+        font-size: 26px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    .header-img {
+        .laptop {
+            position: absolute;            
+            width: 881.96px;
+            height: 489px;
+            margin-left: -150px;            
+            top: 150px;
+        }
+
+        .phone1 {
+            position: absolute;
+            width: 539.5px;
+            height: 440.87px;
+            margin-left: 230px;
+            top: 280px;
+            background: url(iphone-xs-perspective-style-right2.png);
+            
+        }
+
+        .phone2 {
+            position: absolute;
+            width: 546.86px;
+            height: 501.24px;
+            margin-left: 110px;
+            top: 220px;
+            background: url(iphone-xs-perspective-style-right.png);            
+        }
+    }
+
+    .header-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 60px;
+
+        .cn-links {             
+            display: flex;
+            flex-direction: row;        
+            align-items: center;
+            column-gap: 10px;
+    
+            a {         
+                span {
+                    display: block;
+                    width: 45px;
+                    height: 45px;
+                }
+    
+                .insta {                
+                    background: url("/static/icons/instagram.svg") no-repeat center;
+                }
+    
+                .fb {
+                    background: url("/static/icons/facebook.svg") no-repeat center;
+                }
+    
+                .linkedin {
+                    background: url("/static/icons/linkedin.svg") no-repeat center;
+                }
+    
+                &:hover {
+                    .insta {                
+                        background: url("/static/icons/instagram_hvr.svg") no-repeat center;
+                    }
+        
+                    .fb {
+                        background: url("/static/icons/facebook_hvr.svg") no-repeat center;
+                    }
+        
+                    .linkedin {
+                        background: url("/static/icons/linkedin_hvr.svg") no-repeat center;
+                    }   
+                }
+            }
+        }    
+        .mouse-down {
+            display: block;
+            width: 24;
+            height: 34;
+            background: url('/static/icons/mouse.svg') no-repeat center;
+            
+        }
+    }
+
+    
+}

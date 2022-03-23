@@ -1,4 +1,4 @@
-.initial {
+header {
     .radial1 {
         position: absolute;
         width: 761px;
@@ -9,6 +9,7 @@
         background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
         opacity: 0.15;
         filter: blur(400px);
+        z-index: -1;
     }
 
     .radial2 {
@@ -20,6 +21,7 @@
         background: #3360FF;
         opacity: 0.5;
         filter: blur(350px);
+        z-index: -1;
     }
 
     .radial3 {
@@ -31,5 +33,66 @@
         background: #00F0FF;
         opacity: 0.5;
         filter: blur(350px);
+        z-index: -1;
+    }
+}
+
+.about-services {
+    .radial1 {
+        position: absolute;
+        width: 416px;
+        height: 416px;
+        left: 1064px;
+        top: 1479px;
+        z-index: -1;
+
+        /* Gradient */
+
+        background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+        opacity: 0.3;
+        filter: blur(350px);
+    }
+
+    .radial2 {
+        position: absolute;
+        width: 286px;
+        height: 286px;
+        left: -157px;
+        top: 1843px;
+
+        background: #3360FF;
+        opacity: 0.3;
+        filter: blur(400px);
+        z-index: -1;
+    }
+
+    .radial3 {
+        position: absolute;
+        width: 620px;
+        height: 620px;
+        left: 1420px;
+        top: 2379px;
+
+        background: #3360FF;
+        opacity: 0.3;
+        filter: blur(400px);
+        z-index: -1;
+        border: 1px solid #f00;
+    }
+
+    .radial4 {
+        position: absolute;
+        width: 559px;
+        height: 559px;
+        left: -250px;
+        top: 3144px;
+
+        /* Gradient */
+
+        background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+        opacity: 0.3;
+        filter: blur(400px);
+        z-index: -1;
+        border: 1px solid #f00;
     }
 }
