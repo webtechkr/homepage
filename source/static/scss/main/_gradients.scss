@@ -1,0 +1,35 @@
+.initial {
+    .radial1 {
+        position: absolute;
+        width: 761px;
+        height: 761px;
+        left: -386px;
+        top: -415px;
+        /* Gradient */
+        background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+        opacity: 0.15;
+        filter: blur(400px);
+    }
+
+    .radial2 {
+        position: absolute;
+        width: 315px;
+        height: 315px;
+        left: 736px;
+        top: 423px;
+        background: #3360FF;
+        opacity: 0.5;
+        filter: blur(350px);
+    }
+
+    .radial3 {
+        position: absolute;
+        width: 315px;
+        height: 315px;
+        left: 1017px;
+        top: 278px;
+        background: #00F0FF;
+        opacity: 0.5;
+        filter: blur(350px);
+    }
+}

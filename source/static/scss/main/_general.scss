@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/static/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-extraBold';
+    src: url('/static/fonts/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-light';
+    src: url('/static/fonts/Gilroy-Light.ttf');
+}
+
+
+:root {
+    --color-white: #FFFFFF;
+    --color-bg-primary: #181B1F;
+
+}
+
+body {
+    background-color: #181B1F;    
+    color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+    a {
+        color: var(--color-white);
+        text-decoration: none;
+    }
+}
+
+
