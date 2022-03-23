@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/main/_general.scss",
+        "../scss/main/_gradients.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
