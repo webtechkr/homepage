@@ -72,28 +72,28 @@ header {
                 }
     
                 .insta {                
-                    background: url("static/icons/instagram.svg") no-repeat center;
+                    background: url("../icons/instagram.svg") no-repeat center;
                 }
     
                 .fb {
-                    background: url("static/icons/facebook.svg") no-repeat center;
+                    background: url("../icons/facebook.svg") no-repeat center;
                 }
     
                 .linkedin {
-                    background: url("static/icons/linkedin.svg") no-repeat center;
+                    background: url("../icons/linkedin.svg") no-repeat center;
                 }
     
                 &:hover {
                     .insta {                
-                        background: url("static/icons/instagram_hvr.svg") no-repeat center;
+                        background: url("../icons/instagram_hvr.svg") no-repeat center;
                     }
         
                     .fb {
-                        background: url("static/icons/facebook_hvr.svg") no-repeat center;
+                        background: url("../icons/facebook_hvr.svg") no-repeat center;
                     }
         
                     .linkedin {
-                        background: url("static/icons/linkedin_hvr.svg") no-repeat center;
+                        background: url("../icons/linkedin_hvr.svg") no-repeat center;
                     }   
                 }
             }
@@ -102,7 +102,7 @@ header {
             display: block;
             width: 24;
             height: 34;
-            background: url('static/icons/mouse.svg') no-repeat center;
+            background: url('../icons/mouse.svg') no-repeat center;
             
         }
     }
