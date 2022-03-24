@@ -39,8 +39,6 @@ header {
             height: 440.87px;
             margin-left: 230px;
             top: 280px;
-            background: url(iphone-xs-perspective-style-right2.png);
-            
         }
 
         .phone2 {
@@ -48,8 +46,7 @@ header {
             width: 546.86px;
             height: 501.24px;
             margin-left: 110px;
-            top: 220px;
-            background: url(iphone-xs-perspective-style-right.png);            
+            top: 220px;            
         }
     }
 
@@ -75,28 +72,28 @@ header {
                 }
     
                 .insta {                
-                    background: url("/static/icons/instagram.svg") no-repeat center;
+                    background: url("static/icons/instagram.svg") no-repeat center;
                 }
     
                 .fb {
-                    background: url("/static/icons/facebook.svg") no-repeat center;
+                    background: url("static/icons/facebook.svg") no-repeat center;
                 }
     
                 .linkedin {
-                    background: url("/static/icons/linkedin.svg") no-repeat center;
+                    background: url("static/icons/linkedin.svg") no-repeat center;
                 }
     
                 &:hover {
                     .insta {                
-                        background: url("/static/icons/instagram_hvr.svg") no-repeat center;
+                        background: url("static/icons/instagram_hvr.svg") no-repeat center;
                     }
         
                     .fb {
-                        background: url("/static/icons/facebook_hvr.svg") no-repeat center;
+                        background: url("static/icons/facebook_hvr.svg") no-repeat center;
                     }
         
                     .linkedin {
-                        background: url("/static/icons/linkedin_hvr.svg") no-repeat center;
+                        background: url("static/icons/linkedin_hvr.svg") no-repeat center;
                     }   
                 }
             }
@@ -105,7 +102,7 @@ header {
             display: block;
             width: 24;
             height: 34;
-            background: url('/static/icons/mouse.svg') no-repeat center;
+            background: url('static/icons/mouse.svg') no-repeat center;
             
         }
     }

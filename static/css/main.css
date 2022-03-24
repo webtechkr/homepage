@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Poppins';
-  src: url("/static/fonts/Poppins-Regular.ttf");
+  src: url("static/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Poppins-Bold';
-  src: url("/static/fonts/Poppins-Bold.ttf");
+  src: url("static/fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: 'Gilroy-extraBold';
-  src: url("/static/fonts/Gilroy-ExtraBold.ttf");
+  src: url("static/fonts/Gilroy-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: 'Gilroy-light';
-  src: url("/static/fonts/Gilroy-Light.ttf");
+  src: url("static/fonts/Gilroy-Light.ttf");
 }
 
 :root {
@@ -221,7 +221,7 @@ header .radial3 {
 
 .navbar .navbar-items .nav-lang {
   text-transform: upperCase;
-  background-image: url("/static/icons/drop_down_arrow.svg");
+  background-image: url("static/icons/drop_down_arrow.svg");
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 15px;
@@ -282,7 +282,7 @@ header .radial3 {
   display: block;
   width: 12px;
   height: 12px;
-  background: url("/static/icons/arrow_right.svg") no-repeat center;
+  background: url("static/icons/arrow_right.svg") no-repeat center;
 }
 
 .navbar .navbar-items .nav-start:hover {
@@ -292,7 +292,7 @@ header .radial3 {
 }
 
 .navbar .navbar-items .nav-start:hover span {
-  background: url("/static/icons/arrow_right_white.svg") no-repeat center;
+  background: url("static/icons/arrow_right_white.svg") no-repeat center;
 }
 
 .navbar .navbar-items .nav-menu-btn {
@@ -302,14 +302,14 @@ header .radial3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
-  background: url("/static/icons/top_menu.svg") no-repeat center;
+  background: url("static/icons/top_menu.svg") no-repeat center;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .navbar .navbar-items .nav-menu-btn:hover {
-  background: #FFFFFF url("/static/icons/top_menu_black.svg") no-repeat center;
+  background: #FFFFFF url("static/icons/top_menu_black.svg") no-repeat center;
 }
 
 header h1.title {
@@ -349,7 +349,6 @@ header .header-img .phone1 {
   height: 440.87px;
   margin-left: 230px;
   top: 280px;
-  background: url(iphone-xs-perspective-style-right2.png);
 }
 
 header .header-img .phone2 {
@@ -358,7 +357,6 @@ header .header-img .phone2 {
   height: 501.24px;
   margin-left: 110px;
   top: 220px;
-  background: url(iphone-xs-perspective-style-right.png);
 }
 
 header .header-bottom {
@@ -401,34 +399,34 @@ header .header-bottom .cn-links a span {
 }
 
 header .header-bottom .cn-links a .insta {
-  background: url("/static/icons/instagram.svg") no-repeat center;
+  background: url("static/icons/instagram.svg") no-repeat center;
 }
 
 header .header-bottom .cn-links a .fb {
-  background: url("/static/icons/facebook.svg") no-repeat center;
+  background: url("static/icons/facebook.svg") no-repeat center;
 }
 
 header .header-bottom .cn-links a .linkedin {
-  background: url("/static/icons/linkedin.svg") no-repeat center;
+  background: url("static/icons/linkedin.svg") no-repeat center;
 }
 
 header .header-bottom .cn-links a:hover .insta {
-  background: url("/static/icons/instagram_hvr.svg") no-repeat center;
+  background: url("static/icons/instagram_hvr.svg") no-repeat center;
 }
 
 header .header-bottom .cn-links a:hover .fb {
-  background: url("/static/icons/facebook_hvr.svg") no-repeat center;
+  background: url("static/icons/facebook_hvr.svg") no-repeat center;
 }
 
 header .header-bottom .cn-links a:hover .linkedin {
-  background: url("/static/icons/linkedin_hvr.svg") no-repeat center;
+  background: url("static/icons/linkedin_hvr.svg") no-repeat center;
 }
 
 header .header-bottom .mouse-down {
   display: block;
   width: 24;
   height: 34;
-  background: url("/static/icons/mouse.svg") no-repeat center;
+  background: url("static/icons/mouse.svg") no-repeat center;
 }
 
 .banner1 {
