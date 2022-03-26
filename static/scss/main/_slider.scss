@@ -3,10 +3,22 @@
     background: #1F262D;    
 
     .carousel {    
+        margin-bottom: 130px;
+
+        .carousel-indicators {            
+            margin-bottom: -40px;;
+
+            button {                
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+
         .carousel-inner {        
             margin-left: 65px;
             margin-right: 65px;
-            width: 90%;
+            width: 90%;            
         }
     
         %carousel-btn {
@@ -46,9 +58,11 @@
                 padding: 20px 30px;
                 text-align: center;
                 min-height: 230px;
+                transition: all 0.5s ease;                
                 
                 &:hover {
                     outline: 1px solid #00F0FF;
+                    box-shadow: 0 0 3px 1px #00F0FF;
                 } 
     
                 .divider-sm {
@@ -72,3 +86,86 @@
     }
 }
 
+.swipper {
+
+    .radial1 {
+        position: absolute;
+        width: 788px;
+        height: 788px;
+        left: 1053px;
+        top: 3643px;
+        background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+        opacity: 0.2;
+        filter: blur(350px);
+        z-index: -1;
+    }
+
+    .radial2 {
+        position: absolute;
+        width: 436px;
+        height: 436px;
+        left: -287px;
+        top: 4871px;
+        background: #3360FF;
+        opacity: 0.2;
+        filter: blur(400px);
+        z-index: -1;
+    }
+
+    .carousel {    
+        margin-bottom: 130px;
+
+        .carousel-indicators {            
+            margin-bottom: -40px;;
+
+            button {                
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+
+        .carousel-inner {        
+            margin-left: 65px;
+            margin-right: 65px;
+            width: 90%;            
+        }
+    
+        %carousel-btn {
+            border: 1px solid #FFFFFF;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            top: 44%;        
+        }
+    
+        .carousel-control-prev {
+            @extend %carousel-btn;        
+        }
+    
+        .carousel-control-next {
+            @extend %carousel-btn;
+        }
+    
+        .carousel-control-next-icon {
+            background: url('../icons/arrow_left_s.svg') no-repeat center;
+        }
+    
+        .carousel-control-prev-icon {
+            background: url('../icons/arrow_right_s.svg') no-repeat center;
+        }
+    
+        .carousel-content {        
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+            align-items: center;
+            padding: 10px;
+            
+            .carousel-card {
+                
+            }
+    
+        }
+    }
+}

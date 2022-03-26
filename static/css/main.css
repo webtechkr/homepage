@@ -607,6 +607,20 @@ header .header-bottom .mouse-down {
   background: #1F262D;
 }
 
+.slider .carousel {
+  margin-bottom: 130px;
+}
+
+.slider .carousel .carousel-indicators {
+  margin-bottom: -40px;
+}
+
+.slider .carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 .slider .carousel .carousel-inner {
   margin-left: 65px;
   margin-right: 65px;
@@ -647,10 +661,14 @@ header .header-bottom .mouse-down {
   padding: 20px 30px;
   text-align: center;
   min-height: 230px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .slider .carousel .carousel-content .carousel-card:hover {
   outline: 1px solid #00F0FF;
+  -webkit-box-shadow: 0 0 3px 1px #00F0FF;
+          box-shadow: 0 0 3px 1px #00F0FF;
 }
 
 .slider .carousel .carousel-content .carousel-card .divider-sm {
@@ -665,5 +683,80 @@ header .header-bottom .mouse-down {
   line-height: 19px;
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
+}
+
+.swipper .radial1 {
+  position: absolute;
+  width: 788px;
+  height: 788px;
+  left: 1053px;
+  top: 3643px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
+  background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+  opacity: 0.2;
+  -webkit-filter: blur(350px);
+          filter: blur(350px);
+  z-index: -1;
+}
+
+.swipper .radial2 {
+  position: absolute;
+  width: 436px;
+  height: 436px;
+  left: -287px;
+  top: 4871px;
+  background: #3360FF;
+  opacity: 0.2;
+  -webkit-filter: blur(400px);
+          filter: blur(400px);
+  z-index: -1;
+}
+
+.swipper .carousel {
+  margin-bottom: 130px;
+}
+
+.swipper .carousel .carousel-indicators {
+  margin-bottom: -40px;
+}
+
+.swipper .carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.swipper .carousel .carousel-inner {
+  margin-left: 65px;
+  margin-right: 65px;
+  width: 90%;
+}
+
+.swipper .carousel .carousel-control-prev, .swipper .carousel .carousel-control-next {
+  border: 1px solid #FFFFFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 44%;
+}
+
+.swipper .carousel .carousel-control-next-icon {
+  background: url("../icons/arrow_left_s.svg") no-repeat center;
+}
+
+.swipper .carousel .carousel-control-prev-icon {
+  background: url("../icons/arrow_right_s.svg") no-repeat center;
+}
+
+.swipper .carousel .carousel-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */
