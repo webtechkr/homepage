@@ -86,3 +86,41 @@ header {
         z-index: -1;        
     }
 }
+
+.swipper {
+    .radial1 {
+        position: absolute;
+        width: 788px;
+        height: 788px;
+        left: 1053px;
+        top: 3643px;
+        background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+        opacity: 0.2;
+        filter: blur(350px);
+        z-index: -1;
+    }
+
+    .radial2 {
+        position: absolute;
+        width: 436px;
+        height: 436px;
+        left: -287px;
+        top: 4871px;
+        background: #3360FF;
+        opacity: 0.2;
+        filter: blur(400px);
+    }
+}
+
+.our-team {
+    .radial1 {
+        position: absolute;
+        width: 464px;
+        height: 464px;
+        left: 1376px;
+        top: 5737px;
+        background: #3360FF;
+        opacity: 0.3;
+        filter: blur(400px);
+    }
+}
