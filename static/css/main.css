@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Poppins-semiBold';
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
   font-family: 'Gilroy-extraBold';
   src: url("../fonts/Gilroy-ExtraBold.ttf");
 }
@@ -39,6 +44,29 @@ body a {
 
 body .container {
   overflow: hidden;
+}
+
+.section-title {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.divider, .about-services .divider-sm {
+  width: 110px;
+  height: 0px;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
+  border-image-slice: 1;
+  border-image-width: 0 0 3px 0;
+}
+
+.mt-90 {
+  margin-top: 90px;
 }
 
 header .radial1 {
@@ -86,10 +114,9 @@ header .radial3 {
   position: absolute;
   width: 416px;
   height: 416px;
-  left: 1064px;
+  right: 20%;
   top: 1479px;
   z-index: -1;
-  /* Gradient */
   background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
   background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
   opacity: 0.3;
@@ -101,7 +128,7 @@ header .radial3 {
   position: absolute;
   width: 286px;
   height: 286px;
-  left: -157px;
+  left: 5%;
   top: 1843px;
   background: #3360FF;
   opacity: 0.3;
@@ -114,14 +141,13 @@ header .radial3 {
   position: absolute;
   width: 620px;
   height: 620px;
-  left: 1420px;
+  right: 5%;
   top: 2379px;
   background: #3360FF;
   opacity: 0.3;
   -webkit-filter: blur(400px);
           filter: blur(400px);
   z-index: -1;
-  border: 1px solid #f00;
 }
 
 .about-services .radial4 {
@@ -130,14 +156,12 @@ header .radial3 {
   height: 559px;
   left: -250px;
   top: 3144px;
-  /* Gradient */
   background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
   background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
   opacity: 0.3;
   -webkit-filter: blur(400px);
           filter: blur(400px);
   z-index: -1;
-  border: 1px solid #f00;
 }
 
 .navbar {
@@ -326,7 +350,7 @@ header .divider {
   border: 3px solid;
   border-image-source: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
   border-image-slice: 1;
-  border-image-width: 0 0 2px 0;
+  border-image-width: 0 0 3px 0;
 }
 
 header .description {
@@ -466,5 +490,87 @@ header .header-bottom .mouse-down {
   line-height: 160%;
   margin: 0;
   margin-top: 12px;
+}
+
+.about-services .bg-text {
+  background-image: url("../icons/webtech.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 60%;
+}
+
+.about-services .divider-sm {
+  width: 43px;
+  border-image-width: 0 0 2px 0;
+}
+
+.about-services .about-info {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 28px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.about-services .block-about {
+  background: #31373F;
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.about-services .block-about .block-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins-semiBold';
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+  font-size: 26px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.about-services .block-about p {
+  font-family: 'Poppins';
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.about-services .service-desc {
+  background: rgba(49, 55, 63, 0.5);
+  border-radius: 8px;
+  padding: 25px 30px;
+  font-size: 18px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.about-services .block-service img {
+  margin-bottom: 16px;
+}
+
+.about-services .block-service .block-title {
+  font-family: 'Poppins-semiBold';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.about-services .block-service p {
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */
