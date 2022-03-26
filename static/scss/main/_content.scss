@@ -64,7 +64,8 @@
     .divider-sm {
         @extend %divider;
         width: 43px;   
-        border-image-width: 0 0 2px 0;    
+        border-image-width: 0 0 2px 0;   
+        margin: 15px 0 5px 0;
     }
 
     .about-info {        
@@ -79,7 +80,7 @@
         background: #31373F;
         border-radius: 8px;
         padding: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
 
         .block-title {  
             display: flex;  

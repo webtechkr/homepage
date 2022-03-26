@@ -566,6 +566,7 @@ header .header-bottom .mouse-down {
 .about-services .divider-sm {
   width: 43px;
   border-image-width: 0 0 2px 0;
+  margin: 15px 0 5px 0;
 }
 
 .about-services .about-info {
@@ -580,7 +581,7 @@ header .header-bottom .mouse-down {
   background: #31373F;
   border-radius: 8px;
   padding: 40px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .about-services .block-about .block-title {
