@@ -1,0 +1,69 @@
+.our-team {
+
+    .team {
+        border: 1px solid #f00;
+        padding-top: 20px;
+        border: 1px solid #0f0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 34px;
+
+        .team-item {
+            border: 1px solid #fff;
+            
+
+            .team-item-content {
+                border: 1px solid #ff0; 
+
+                .photo {
+                    border: 1px solid #f00;
+                }
+
+                .member-name {
+                    font-family: 'Poppins-semiBold';
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #FFFFFF;                    
+                }
+
+                .member-footer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+
+                    .divider {
+                        @extend %divider;
+                        width: 58px;
+                        border-image-width: 0 0 1px 0;
+                        margin: 10px 0;
+                    }
+    
+                    .member-position {                    
+                        font-size: 14px;
+                        line-height: 17px;                    
+                        color: #FFFFFF;
+                        opacity: 0.7;
+                    }
+    
+                    .details-btn {
+                        width: 34px;
+                        height: 34px;
+                        border-radius: 50%;
+                        border: 1px solid #FFFFFF;
+                        opacity: 0.3;
+                        background: url('../icons/arrow_right_white.svg') no-repeat center;
+                    }
+                }
+            }
+
+            .team-item-detail {
+                border: 1px solid #ff0;
+                display: none;
+            }    
+        }
+
+        
+    }
+}
