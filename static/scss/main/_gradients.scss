@@ -122,5 +122,7 @@ header {
         background: #3360FF;
         opacity: 0.3;
         filter: blur(400px);
+        z-index: -1;
     }
+    
 }

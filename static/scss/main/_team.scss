@@ -1,22 +1,44 @@
 .our-team {
 
-    .team {
-        border: 1px solid #f00;
+    .team {        
         padding-top: 20px;
-        border: 1px solid #0f0;
+        padding-bottom: 20px;        
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 34px;
 
-        .team-item {
-            border: 1px solid #fff;
+        .team-item {            
+            overflow: hidden;    
+            max-height: 378px;
             
 
             .team-item-content {
-                border: 1px solid #ff0; 
+                overflow-y: hidden;
 
-                .photo {
-                    border: 1px solid #f00;
+
+                .photo {                    
+                    padding-top: 20px;                    
+                    text-align: center;   
+                    border-radius: 8px;
+
+                    background: 
+                      radial-gradient(
+                        circle at -30px -90px,
+                        #13263B,
+                        transparent 220px 
+                      ),
+                      radial-gradient(
+                        circle at 250px 290px,
+                        #123545,
+                        transparent 250px
+                    );
+
+                    background-color: #101214;
+
+
+                    img {
+                        max-height: 241px;
+                    }
                 }
 
                 .member-name {
@@ -24,7 +46,8 @@
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 28px;
-                    color: #FFFFFF;                    
+                    color: #FFFFFF;
+                    padding-top: 10px;
                 }
 
                 .member-footer {
@@ -54,16 +77,104 @@
                         border: 1px solid #FFFFFF;
                         opacity: 0.3;
                         background: url('../icons/arrow_right_white.svg') no-repeat center;
+                        cursor: pointer;
+
+                        &:hover {
+                            border: 1px solid #00F0FF;
+
+                        }
                     }
                 }
             }
 
-            .team-item-detail {
-                border: 1px solid #ff0;
-                display: none;
+            .team-item-detail {                                
+                border-radius: 8px;                
+                background: 
+                  radial-gradient(
+                    circle at -10px -80px,
+                    #144368, 
+                    transparent 220px 
+                  ),
+                  radial-gradient(
+                    circle at 360px 390px,
+                    #124B6A,
+                    transparent 250px
+                  );
+
+                background-color: #101214;
+                position: relative;                
+                height: 100%;
+                padding: 20px;
+                transition: all .4s;
+                display: flex;
+                flex-direction: column;                
+                justify-content: space-between;
+                overflow: hidden;
+                opacity: 0;
+                
+
+                .member-name {
+                    font-family: 'Poppins-semiBold';
+                    font-size: 20px;
+                }
+
+                .divider {
+                    @extend %divider;
+                    width: 58px;
+                    border-image-width: 0 0 1px 0;
+                    margin: 10px 0;
+                }
+
+                .member-position {
+                    font-size: 16px;
+                    line-height: 19px;
+                    opacity: 0.7;
+                }
+
+                .member-spec {
+                    font-size: 14px;
+                    padding-bottom: 10px;
+
+                    .strong {
+                        font-family: 'Poppins-semiBold';                        
+                    }
+
+                    p {
+                       color:rgba(255, 255, 255, 0.7);
+                       margin: 0;
+                    }
+                }
+
+                .member-links {
+                    a {
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        border: 1px solid #fff;
+                        border-radius: 6px;
+                        background: url('../icons/linkedin.svg') no-repeat center;
+                        background-size: 16px;
+                        transition: ease-in-out .3s;
+                        margin-top: 10px;
+                        
+                        &:hover {                            
+                            background: url('../icons/linkedin_black.svg') no-repeat center;
+                            background-color: #FFFFFF;
+                        }
+                    }
+
+
+                }
             }    
+
+            &:hover .team-item-detail {
+                margin-top: -370px;
+                opacity: 1;
+            }
         }
 
         
     }
 }
+
+
