@@ -351,7 +351,7 @@
         </div>
     </main>
 
-    <main class="swipper">
+    <main class="swiper-slider">
         <div class="container">
             <div class="radial1"></div>
             <div class="radial2"></div>
@@ -363,27 +363,48 @@
             </div>
             <div class="row mt-5">
                 <div class="col">
-                    <div id="clients" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#clients" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#clients" data-bs-slide-to="1" aria-label="Slide 2"></button>                            
+                    <div class="swiper">
+                        <div class="swiper-controls">
+                            <button class="swiper-control swiper-controls-previous"></button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="carousel-content">
-                                    <div class="carousel-card">
-                                        
-                                    </div>
+                        <div class="swiper-container">
+                            <div class="swiper-item swiper-item-1" data-index="1">
+                                <img src="static/images/manajoy.png" alt="Manajoy">
+                                <div class="swiper-footer">
+                                    <h5>Manajoy</h5>
+                                    <div class="divider"></div>
+                                    <p>UX/UI Design, Consulting, Develop</p>
                                 </div>
-                            </div>                                                
+                            </div>
+                            <div class="swiper-item swiper-item-2" data-index="2">
+                                <img src="static/images/drugsnote.png" alt="Drugsnote">
+                                <div class="swiper-footer">
+                                    <h5>Drugsnote</h5>
+                                    <div class="divider"></div>
+                                    <p>UX/UI Design, Consulting, Develop</p>
+                                </div>
+                            </div>
+                            <div class="swiper-item swiper-item-3" data-index="3">
+                                <img src="static/images/workoutnote.png" alt="Wokroutnote">
+                                <div class="swiper-footer">
+                                    <h5>Workoutnote</h5>
+                                    <div class="divider"></div>
+                                    <p>UX/UI Design, Consulting, Develop</p>
+                                </div>
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#clients" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>                            
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#clients" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>                            
-                        </button>
+                        <div class="swiper-controls">
+                          <button class="swiper-control swiper-controls-next"></button>
+                        </div>                      
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="works-all">
+                        <a href="#">View all news</a>
+                        <i class="icon-arrow"></i>
+                    </div>                        
                 </div>
             </div>
         </div>
@@ -906,5 +927,6 @@
     </main>
 
     <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.js"></script>
 </body>
 </html>

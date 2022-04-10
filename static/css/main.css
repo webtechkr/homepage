@@ -56,7 +56,7 @@ body .container {
   margin-bottom: 16px;
 }
 
-.divider, .about-services .divider-sm, .slider .carousel .carousel-content .carousel-card .divider-sm, .our-team .team .team-item .team-item-content .member-footer .divider, .our-team .team .team-item .team-item-detail .divider, .contact-us .divider {
+.divider, .about-services .divider-sm, .slider .carousel .carousel-content .carousel-card .divider-sm, .swiper-slider .swiper-item .swiper-footer .divider, .our-team .team .team-item .team-item-content .member-footer .divider, .our-team .team .team-item .team-item-detail .divider, .contact-us .divider {
   width: 110px;
   height: 0px;
   border: 3px solid;
@@ -730,52 +730,167 @@ header .header-bottom .mouse-down {
   margin: 0;
 }
 
-.swipper .carousel {
-  margin-bottom: 130px;
+.swiper-slider {
+  padding-bottom: 80px;
 }
 
-.swipper .carousel .carousel-indicators {
-  margin-bottom: -40px;
-}
-
-.swipper .carousel .carousel-indicators button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.swipper .carousel .carousel-inner {
-  margin-left: 65px;
-  margin-right: 65px;
-  width: 90%;
-}
-
-.swipper .carousel .carousel-control-prev, .swipper .carousel .carousel-control-next {
-  border: 1px solid #FFFFFF;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  top: 44%;
-}
-
-.swipper .carousel .carousel-control-next-icon {
-  background: url("../icons/arrow_left_s.svg") no-repeat center;
-}
-
-.swipper .carousel .carousel-control-prev-icon {
-  background: url("../icons/arrow_right_s.svg") no-repeat center;
-}
-
-.swipper .carousel .carousel-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+.swiper-slider .swiper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  height: 100%;
+}
+
+.swiper-slider .swiper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 530px;
+  padding: 5px 0;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+}
+
+.swiper-slider .swiper-item {
+  width: 340px;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.swiper-slider .swiper-item img {
+  width: 100%;
+}
+
+.swiper-slider .swiper-item .swiper-footer {
+  padding: 8px 20px;
+  background: #292F35;
+  border-radius: 0 0 8px 8px;
+}
+
+.swiper-slider .swiper-item .swiper-footer h5 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Poppins-semiBold';
+  margin: 0;
+}
+
+.swiper-slider .swiper-item .swiper-footer .divider {
+  width: 27px;
+  height: 1px;
+  border-image-width: 0 0 1px 0;
+  margin: 3px 0 6px 0;
+}
+
+.swiper-slider .swiper-item .swiper-footer p {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.swiper-slider .swiper-item-1 {
+  left: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.swiper-slider .swiper-item-2 {
+  width: 430px;
+  opacity: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+.swiper-slider .swiper-item-2 .swiper-footer h5 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.swiper-slider .swiper-item-2 .swiper-footer p {
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.swiper-slider .swiper-item-3 {
+  left: 85%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.swiper-slider .swiper-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+  margin-top: 20px;
+}
+
+.swiper-slider .swiper-controls button {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  opacity: .5;
+}
+
+.swiper-slider .swiper-controls button:focus {
+  outline: none;
+}
+
+.swiper-slider .swiper-controls button:hover {
+  opacity: 1;
+}
+
+.swiper-slider .swiper-controls-previous {
+  position: relative;
+  background: url("../icons/arrow_left_s.svg") no-repeat center;
+}
+
+.swiper-slider .swiper-controls-next {
+  position: relative;
+  background: url("../icons/arrow_right_s.svg") no-repeat center;
+}
+
+.swiper-slider .works-all {
+  text-align: end;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.swiper-slider .works-all a {
+  border: 1px solid #FFF;
+  padding: 7px 30px 7px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 21px;
+  background: url("../icons/arrow_right_white.svg") no-repeat center;
+  background-position-x: 9rem;
+}
+
+.swiper-slider .works-all a:hover {
+  background: url("../icons/arrow_right.svg") no-repeat center #FFFFFF;
+  background-position-x: 9rem;
+  color: #25292F;
 }
 
 .our-team {
