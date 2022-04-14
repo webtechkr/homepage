@@ -42,6 +42,10 @@ body a {
   text-decoration: none;
 }
 
+body a:hover {
+  color: var(--color-white);
+}
+
 body .container {
   overflow: hidden;
 }
@@ -218,7 +222,7 @@ header .radial3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .navbar .logo {
@@ -289,16 +293,17 @@ header .radial3 {
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 15px;
-  opacity: 0.5;
-  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .navbar .navbar-items .nav-lang nav {
-  position: absolute;
   display: none;
+  position: absolute;
   width: 35px;
+  z-index: 999;
 }
 
 .navbar .navbar-items .nav-lang nav a {
@@ -884,12 +889,12 @@ header .header-bottom .mouse-down {
   font-size: 18px;
   line-height: 21px;
   background: url("../icons/arrow_right_white.svg") no-repeat center;
-  background-position-x: 9rem;
+  background-position: right 14px center;
 }
 
 .swiper-slider .works-all a:hover {
   background: url("../icons/arrow_right.svg") no-repeat center #FFFFFF;
-  background-position-x: 9rem;
+  background-position: right 14px center;
   color: #25292F;
 }
 
@@ -1153,12 +1158,12 @@ header .header-bottom .mouse-down {
   font-size: 18px;
   line-height: 21px;
   background: url("../icons/arrow_right_white.svg") no-repeat center;
-  background-position-x: 9rem;
+  background-position: right 14px center;
 }
 
 .main-news .news-all a:hover {
   background: url("../icons/arrow_right.svg") no-repeat center #FFFFFF;
-  background-position-x: 9rem;
+  background-position: right 14px center;
   color: #25292F;
 }
 

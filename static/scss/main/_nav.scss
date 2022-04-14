@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;    
     align-items: center;    
-    padding: 1rem;
+    padding: 2rem 1rem;
     
     .logo {
         font-family: 'Gilroy-light';
@@ -48,18 +48,21 @@
             background-repeat: no-repeat;
             background-position: right;
             padding-right: 15px;
-            opacity: 0.5;
-            cursor: pointer;
             transition: all 0.5s;            
-            
+            cursor: pointer;
+            opacity: 0.5;
+
             nav {
-                position: absolute;
-                display: none;                
+                display: none;
+                position: absolute;  
                 width: 35px;
+                z-index: 999;
+
                 a {
                     display: block;
                     border: 1px solid transparent;
                 }
+
             }
             
             &:hover {

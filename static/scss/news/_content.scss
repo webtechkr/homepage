@@ -1,6 +1,18 @@
-.main-news {
-    padding-top:80px;
-    padding-bottom:80px;
+.news-content {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .divider {
+        @extend .divider;
+        width: 55px;
+        margin: 15px 0;
+
+    }
 
     .news-item-wrap {
         padding: 1px;
@@ -69,28 +81,44 @@
         
     }
 
-    .news-all {        
-        text-align: end;        
-        padding: 20px 0;
-        margin-top: 30px;
+    .pagination-wrap {
+        position: relative;
+        text-align: center;
+        
+        .news-pagination {
+            position: relative;
+            margin: auto 0;
+            list-style: none;
+            padding: 2px;
+        
+            .pgn-item {
+                display: inline-block;
+                margin-right: 10px;
+                cursor: pointer;
+                line-height: 30px;
+                transition: all 0.3s ease-in-out;
+                background-color: #25292F;
+                min-width: 30px;
+                border-radius: 3px; 
 
-        a {
-            border: 1px solid #FFF;
-            padding: 7px 30px 7px 20px;
-            border-radius: 8px;
-            font-size: 18px;
-            line-height: 21px;
-            background: url("../icons/arrow_right_white.svg") no-repeat center;
-            background-position: right 14px center;
+                a {                    
+                    color: #fff;
+                    padding: 5 10px;
+                    text-decoration: none;
+                    
+                }
 
-            &:hover {
-                background: url("../icons/arrow_right.svg") no-repeat center #FFFFFF;
-                background-position: right 14px center;
-                color: #25292F; 
+                &:hover, &.active {
+                    background-color: rgba(0, 240, 255, 0.3);
+                    
+                }
+
+                &.loop {
+                    background-color: #181B1F;
+                }
             }
         }
+    }
 
-        
-        
-    }   
+
 }

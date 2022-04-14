@@ -42,6 +42,10 @@ body a {
   text-decoration: none;
 }
 
+body a:hover {
+  color: var(--color-white);
+}
+
 body .container {
   overflow: hidden;
 }
@@ -56,7 +60,7 @@ body .container {
   margin-bottom: 16px;
 }
 
-.divider {
+.divider, .work-content .divider {
   width: 110px;
   height: 0px;
   border: 3px solid;
@@ -84,7 +88,7 @@ body .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .navbar .logo {
@@ -155,16 +159,17 @@ body .container {
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 15px;
-  opacity: 0.5;
-  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .navbar .navbar-items .nav-lang nav {
-  position: absolute;
   display: none;
+  position: absolute;
   width: 35px;
+  z-index: 999;
 }
 
 .navbar .navbar-items .nav-lang nav a {
@@ -406,5 +411,60 @@ body .container {
 .main-footer .footer-wrap .footer-s-links a {
   line-height: 18px;
   margin-bottom: 10px;
+}
+
+.work-content {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.work-content .section-title {
+  font-size: 30px;
+}
+
+.work-content .divider {
+  width: 55px;
+  margin: 15px 0;
+}
+
+.work-content .work-wrap {
+  margin-top: 45px;
+}
+
+.work-content .work-wrap .work-item {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.work-content .work-wrap .work-item:hover {
+  opacity: 1;
+}
+
+.work-content .work-wrap .work-item .work-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.work-content .work-wrap .work-item .work-body {
+  position: relative;
+}
+
+.work-content .work-wrap .work-item .work-body img {
+  width: 100%;
+}
+
+.work-content .work-wrap .work-item .work-body .work-desc {
+  position: absolute;
+  top: 0;
+  padding: 22px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=works.css.map */

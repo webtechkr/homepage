@@ -42,6 +42,10 @@ body a {
   text-decoration: none;
 }
 
+body a:hover {
+  color: var(--color-white);
+}
+
 body .container {
   overflow: hidden;
 }
@@ -84,7 +88,7 @@ body .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .navbar .logo {
@@ -155,16 +159,17 @@ body .container {
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 15px;
-  opacity: 0.5;
-  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .navbar .navbar-items .nav-lang nav {
-  position: absolute;
   display: none;
+  position: absolute;
   width: 35px;
+  z-index: 999;
 }
 
 .navbar .navbar-items .nav-lang nav a {
