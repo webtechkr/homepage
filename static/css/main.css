@@ -37,7 +37,7 @@ body {
   margin: 0;
 }
 
-body a {
+body a, body a:hover {
   color: var(--color-white);
   text-decoration: none;
 }
