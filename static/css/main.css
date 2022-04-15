@@ -42,6 +42,10 @@ body a, body a:hover {
   text-decoration: none;
 }
 
+body a:hover {
+  color: var(--color-white);
+}
+
 body .container {
   overflow: hidden;
 }
@@ -70,140 +74,6 @@ body .container {
   margin-top: 90px;
 }
 
-header .radial1 {
-  position: absolute;
-  width: 761px;
-  height: 761px;
-  left: -386px;
-  top: -415px;
-  /* Gradient */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
-  background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
-  opacity: 0.15;
-  -webkit-filter: blur(400px);
-          filter: blur(400px);
-  z-index: -1;
-}
-
-header .radial2 {
-  position: absolute;
-  width: 315px;
-  height: 315px;
-  left: 736px;
-  top: 423px;
-  background: #3360FF;
-  opacity: 0.5;
-  -webkit-filter: blur(350px);
-          filter: blur(350px);
-  z-index: -1;
-}
-
-header .radial3 {
-  position: absolute;
-  width: 315px;
-  height: 315px;
-  left: 1017px;
-  top: 278px;
-  background: #00F0FF;
-  opacity: 0.5;
-  -webkit-filter: blur(350px);
-          filter: blur(350px);
-  z-index: -1;
-}
-
-.about-services .radial1 {
-  position: absolute;
-  width: 416px;
-  height: 416px;
-  right: 20%;
-  top: 1479px;
-  z-index: -1;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
-  background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
-  opacity: 0.3;
-  -webkit-filter: blur(350px);
-          filter: blur(350px);
-}
-
-.about-services .radial2 {
-  position: absolute;
-  width: 286px;
-  height: 286px;
-  left: 5%;
-  top: 1843px;
-  background: #3360FF;
-  opacity: 0.3;
-  -webkit-filter: blur(400px);
-          filter: blur(400px);
-  z-index: -1;
-}
-
-.about-services .radial3 {
-  position: absolute;
-  width: 620px;
-  height: 620px;
-  right: 5%;
-  top: 2379px;
-  background: #3360FF;
-  opacity: 0.3;
-  -webkit-filter: blur(400px);
-          filter: blur(400px);
-  z-index: -1;
-}
-
-.about-services .radial4 {
-  position: absolute;
-  width: 559px;
-  height: 559px;
-  left: -250px;
-  top: 2744px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
-  background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
-  opacity: 0.3;
-  -webkit-filter: blur(400px);
-          filter: blur(400px);
-  z-index: -1;
-}
-
-.swipper .radial1 {
-  position: absolute;
-  width: 788px;
-  height: 788px;
-  left: 1053px;
-  top: 3643px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0.94%, #00F0FF), color-stop(101.89%, #3360FF));
-  background: linear-gradient(90deg, #00F0FF 0.94%, #3360FF 101.89%);
-  opacity: 0.2;
-  -webkit-filter: blur(350px);
-          filter: blur(350px);
-  z-index: -1;
-}
-
-.swipper .radial2 {
-  position: absolute;
-  width: 436px;
-  height: 436px;
-  left: -287px;
-  top: 4871px;
-  background: #3360FF;
-  opacity: 0.2;
-  -webkit-filter: blur(400px);
-          filter: blur(400px);
-}
-
-.our-team .radial1 {
-  position: absolute;
-  width: 464px;
-  height: 464px;
-  left: 1376px;
-  top: 5737px;
-  background: #3360FF;
-  opacity: 0.3;
-  -webkit-filter: blur(400px);
-          filter: blur(400px);
-  z-index: -1;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,7 +88,7 @@ header .radial3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .navbar .logo {
@@ -289,16 +159,17 @@ header .radial3 {
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 15px;
-  opacity: 0.5;
-  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .navbar .navbar-items .nav-lang nav {
-  position: absolute;
   display: none;
+  position: absolute;
   width: 35px;
+  z-index: 999;
 }
 
 .navbar .navbar-items .nav-lang nav a {
@@ -884,12 +755,12 @@ header .header-bottom .mouse-down {
   font-size: 18px;
   line-height: 21px;
   background: url("../icons/arrow_right_white.svg") no-repeat center;
-  background-position-x: 9rem;
+  background-position: right 14px center;
 }
 
 .swiper-slider .works-all a:hover {
   background: url("../icons/arrow_right.svg") no-repeat center #FFFFFF;
-  background-position-x: 9rem;
+  background-position: right 14px center;
   color: #25292F;
 }
 
@@ -1153,13 +1024,17 @@ header .header-bottom .mouse-down {
   font-size: 18px;
   line-height: 21px;
   background: url("../icons/arrow_right_white.svg") no-repeat center;
-  background-position-x: 9rem;
+  background-position: right 14px center;
 }
 
 .main-news .news-all a:hover {
   background: url("../icons/arrow_right.svg") no-repeat center #FFFFFF;
-  background-position-x: 9rem;
+  background-position: right 14px center;
   color: #25292F;
+}
+
+.contact-us {
+  padding-top: 20px;
 }
 
 .contact-us .divider {

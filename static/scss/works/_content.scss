@@ -1,0 +1,55 @@
+.work-content {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .divider {
+        @extend .divider;
+        width: 55px;
+        margin: 15px 0;
+    }
+
+
+    .work-wrap {
+        margin-top: 45px;
+
+        .work-item {
+            opacity: 0.7;
+            transition: opacity 0.5s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .work-title {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                color: #FFFFFF;
+                margin-bottom: 25px;
+            }
+
+            .work-body {
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .work-desc {
+                    position: absolute;
+                    top: 0;
+                    padding: 22px 25px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}

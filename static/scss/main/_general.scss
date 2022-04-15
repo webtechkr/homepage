@@ -41,6 +41,10 @@ body {
     a, a:hover {
         color: var(--color-white);
         text-decoration: none;
+
+        &:hover {
+            color: var(--color-white);
+        }
     }
 
     .container {
